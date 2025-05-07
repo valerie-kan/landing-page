@@ -1,0 +1,219 @@
+.reviews-wrapper {
+  padding: 40px 20px;
+}
+
+.reviews-ttl {
+  font-size: 40px;
+  line-height: 110%;
+  margin-bottom: 32px;
+}
+
+.span {
+  background-color: rgba(79, 98, 246, 0.1);
+  display: block;
+  width: 254px;
+}
+
+.invest-span {
+  background-color: transparent;
+}
+
+.review-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  /* position: relative; */
+}
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.photo {
+  border-radius: 100%;
+  width: 73px;
+  height: 73px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 167%;
+  font-family: var(--font-family);
+  color: var(--color-ttl);
+  text-align: center;
+}
+
+.job-position {
+  font-size: 16px;
+  line-height: 169%;
+  color: var(--color-ttl);
+  opacity: 0.7;
+  text-align: center;
+}
+
+.review {
+  font-family: var(--font-family);
+  color: var(--color-ttl);
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+
+.data-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.review-data {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-default);
+}
+
+.left-arrow,
+.right-arrow {
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  border: 1px solid var(--color-disabled);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: border-color 250ms;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  border-color: var(--color-default);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-wrapper {
+    padding: 60px 40px;
+  }
+
+  .reviews-ttl {
+    font-size: 56px;
+    line-height: 118%;
+    margin-bottom: 48px;
+    width: 510px;
+  }
+
+  .span {
+    background-color: transparent;
+    display: inline;
+  }
+
+  .invest-span {
+    background-color: rgba(79, 98, 246, 0.1);
+  }
+
+  .review-info {
+    width: 508px;
+    gap: 16px;
+    margin-inline: auto;
+    position: relative;
+  }
+
+  .person-info {
+    gap: 10px;
+  }
+
+  .job-position {
+    color: var(--color-text);
+    opacity: 1;
+  }
+
+  .data-wrapper {
+    margin-top: 16px;
+    gap: 0;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    position: absolute;
+    top: 40%;
+  }
+
+  .left-arrow {
+    left: -90px;
+  }
+
+  .right-arrow {
+    right: -90px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews-wrapper {
+    padding: 70px 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews-ttl {
+    margin-bottom: 0;
+  }
+
+  .invest-span {
+    width: 355px;
+    height: 72px;
+    display: block;
+  }
+
+  .review-info {
+    width: 585px;
+    gap: 0;
+    margin-inline: 0;
+    margin-top: 27px;
+    align-items: start;
+  }
+
+  .person-info {
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 17px;
+  }
+
+  .name,
+  .job-position {
+    text-align: start;
+  }
+
+  .quotes-icon {
+    position: absolute;
+    top: 90px;
+    left: -48px;
+  }
+
+  .review {
+    text-align: start;
+    margin-bottom: 30px;
+  }
+
+  .data-wrapper {
+    margin-top: 0;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    position: absolute;
+    top: 149px;
+  }
+
+  .left-arrow {
+    left: -615px;
+  }
+
+  .right-arrow {
+    left: -552px;
+  }
+}
