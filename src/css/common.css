@@ -1,18 +1,17 @@
 .container {
-  min-width: 320px;
-  max-width: 375px;
+  width: 320px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: 1440px;
+    width: 1440px;
   }
 }
 
@@ -64,7 +63,6 @@ a:hover {
 
 :root {
   --font-family: 'Nunito Sans', sans-serif;
-  /* --font-family: 'Museo Sans Cyrl', sans-serif; */
   --second-family: 'Montserrat', sans-serif;
 
   --color-ttl: #333333;

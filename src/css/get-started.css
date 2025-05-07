@@ -1,0 +1,162 @@
+.get-started-wrapper {
+  padding: 80px 20px 40px;
+}
+
+.get-started-ttl {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  margin-right: 10px;
+  margin-bottom: 32px;
+}
+
+.ttl-span {
+  background-color: rgba(79, 98, 246, 0.1);
+}
+
+.started-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.start-list-item {
+  padding: 24px;
+  border: 2px solid var(--color-default);
+  border-radius: 30px;
+}
+
+.start-number {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--color-default);
+  margin-bottom: 8px;
+}
+
+.start-list-ttl {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.start-list-text {
+  font-size: 18px;
+  line-height: 167%;
+}
+
+@media screen and (min-width: 768px) {
+  .get-started-wrapper {
+    padding: 120px 40px 60px;
+  }
+
+  .get-started-ttl {
+    font-size: 56px;
+    line-height: 118%;
+    margin-right: 0;
+    margin-bottom: 48px;
+    width: 419px;
+  }
+
+  .started-list {
+    height: 875px;
+    position: relative;
+  }
+
+  .start-list-item {
+    padding: 32px;
+    width: 329px;
+    box-sizing: border-box;
+  }
+
+  .start-list-item:not(:first-of-type) {
+    position: absolute;
+  }
+
+  .second-item {
+    top: 174px;
+    right: 0;
+  }
+
+  .third-item {
+    top: 374px;
+  }
+
+  .forth-item {
+    bottom: 0;
+    right: 0;
+  }
+
+  .line {
+    position: absolute;
+    width: 197px;
+    height: 62px;
+  }
+
+  .dashed-line-1st {
+    top: 119px;
+    right: 164px;
+  }
+
+  .dashed-line-2nd {
+    top: 143px;
+    right: 325px;
+  }
+
+  .dashed-line-3rd {
+    top: 140px;
+    left: 325px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .get-started-wrapper {
+    padding: 140px 120px 70px;
+  }
+
+  .get-started-ttl {
+    font-size: 56px;
+    line-height: 118%;
+    width: 483px;
+    margin-bottom: 60px;
+  }
+
+  .started-list {
+    width: 1098px;
+    height: 790px;
+  }
+
+  .start-list-item {
+    width: 483px;
+    box-sizing: border-box;
+  }
+
+  .second-item {
+    top: 165px;
+    right: 0;
+  }
+
+  .third-item {
+    top: 360px;
+  }
+
+  .line {
+    width: 335px;
+    height: auto;
+  }
+
+  .dashed-line-1st {
+    top: 65px;
+    right: 284px;
+  }
+
+  .dashed-line-2nd {
+    top: 93px;
+    right: 478px;
+  }
+
+  .dashed-line-3rd {
+    top: 85px;
+    left: 478px;
+  }
+}
