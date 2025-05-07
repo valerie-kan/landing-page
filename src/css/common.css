@@ -23,7 +23,7 @@ body {
 button {
   font-family: var(--font-family);
   color: #ffffff;
-  background-color: #4f62f6;
+  background-color: var(--color-default);
   border-radius: 60px;
   border: none;
   font-weight: 500;
@@ -32,11 +32,11 @@ button {
 }
 
 button:hover {
-  background-color: #7181fc;
+  background-color: var(--color-hover);
 }
 
 button:focus {
-  background-color: #354bf4;
+  background-color: var(--color-focus);
 }
 
 a {
@@ -45,7 +45,7 @@ a {
 }
 
 a:hover {
-  color: #7181fc;
+  color: var(--color-hover);
 }
 
 :root {
@@ -55,4 +55,8 @@ a:hover {
 
   --color-ttl: #333333;
   --color-text: #4f4f4f;
+  --color-default: #4f62f6;
+  --color-hover: #7181fc;
+  --color-focus: #354bf4;
+  --color-disabled: #e0e0e0;
 }

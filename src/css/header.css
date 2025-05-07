@@ -76,7 +76,7 @@
   }
 
   .lang-button:hover {
-    border-color: #7181fc;
+    border-color: var(--color-hover);
   }
 
   .burger {
