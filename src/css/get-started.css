@@ -45,6 +45,10 @@
   line-height: 167%;
 }
 
+.line {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .get-started-wrapper {
     padding: 120px 40px 60px;
@@ -88,6 +92,7 @@
   }
 
   .line {
+    display: block;
     position: absolute;
     width: 197px;
     height: 62px;
