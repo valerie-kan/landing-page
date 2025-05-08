@@ -1,8 +1,8 @@
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const textarea = document.getElementById('comment');
-const button = document.getElementById('formBtn');
-const form = document.getElementById('contactForm');
+const button = document.querySelector('.form-btn');
+const form = document.querySelector('.form-wrapper');
 
 let nameTouched = false;
 let emailTouched = false;

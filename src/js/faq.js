@@ -1,4 +1,4 @@
-const faqList = document.getElementById('faqList');
+const faqList = document.querySelector('.faq-list');
 
 for (let i = 1; i <= 5; i++) {
   const li = document.createElement('li');

@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -14,9 +15,112 @@
 }
 
 .navigation,
+.burger-nav {
+  display: flex;
+  gap: 32px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 107%;
+}
+
+.navigation,
 .lang-button,
 .sign-in-btn {
   display: none;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.lang-button,
+.burger-lang-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #000000;
+  border-radius: 60px;
+  padding: 10px 16px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 107%;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 250ms;
+}
+
+.lang-button:hover,
+.burger-lang-btn:hover {
+  border-color: var(--color-hover);
+}
+
+.lang-button {
+  display: none;
+}
+
+.burger-overlay {
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(17, 24, 39, 0.6);
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 250ms;
+}
+
+.burger-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.burger-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition: transform 250ms;
+}
+
+.burger-overlay.open .burger-modal {
+  transform: translateX(0);
+}
+
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  transition: border 250ms;
+}
+
+.close-icon:hover {
+  border-color: var(--color-hover);
+}
+
+.burger-lang-btn {
+  width: 100px;
+}
+
+.burger-nav {
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sign-in-burger {
+  padding: 13px;
+  width: 180px;
 }
 
 @media screen and (min-width: 768px) {
@@ -33,6 +137,28 @@
   .sign-in-btn {
     display: block;
     padding: 13px 24px;
+  }
+
+  .burger-modal {
+    width: 40%;
+    justify-content: start;
+    padding: 50px;
+  }
+
+  .close-icon {
+    top: 30px;
+    right: 30px;
+  }
+
+  .burger-nav {
+    align-self: center;
+    margin-block: auto;
+    gap: 25px;
+    font-size: 17px;
+  }
+
+  .sign-in-burger {
+    display: none;
   }
 }
 
@@ -52,10 +178,6 @@
 
   .navigation {
     display: flex;
-    gap: 32px;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 107%;
   }
 
   .btns-wrapper {
@@ -64,20 +186,6 @@
 
   .lang-button {
     display: flex;
-    align-items: center;
-    gap: 8px;
-    border: 1px solid #000000;
-    border-radius: 60px;
-    padding: 10px 16px;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 107%;
-    cursor: pointer;
-    transition: border-color 250ms;
-  }
-
-  .lang-button:hover {
-    border-color: var(--color-hover);
   }
 
   .burger {
