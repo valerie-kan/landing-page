@@ -12,9 +12,6 @@
   gap: 24px;
 }
 
-.contact-add-info {
-}
-
 .add-info-text {
   font-size: 16px;
   line-height: 169%;
@@ -120,8 +117,6 @@
 @media screen and (min-width: 768px) {
   .contact-us-wrapper {
     padding-inline: 130px;
-    flex-direction: row;
-    gap: 132px;
   }
 
   .contact-ttl {
@@ -149,6 +144,8 @@
 @media screen and (min-width: 1440px) {
   .contact-us-wrapper {
     padding: 120px;
+    flex-direction: row;
+    gap: 132px;
   }
 
   .contact-ttl {
