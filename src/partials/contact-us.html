@@ -16,8 +16,8 @@
             <a class="contact-link" href="tel:+442038857261">442038857261</a>
           </li>
           <li class="contact-item">
-            <span class="item-span">Email:</span
-            ><a class="contact-link" href="mailto:help@google.com"
+            <span class="item-span">Email:</span>
+            <a class="contact-link" href="mailto:help@google.com"
               >help@google.com</a
             >
           </li>
@@ -32,7 +32,7 @@
       </div>
     </div>
 
-    <form class="form-wrapper">
+    <form class="form-wrapper" id="contactForm">
       <div class="inputs-cont">
         <div class="input-wrapper">
           <input
@@ -42,7 +42,7 @@
             type="text"
             placeholder="Name"
           />
-          <span class="success-message" id="successName"></span>
+          <!-- <span class="success-message" id="successName"></span> -->
           <span class="err-message" id="errName">Please enter your name</span>
         </div>
 
@@ -54,7 +54,7 @@
             type="email"
             placeholder="Email"
           />
-          <span class="success-message" id="successEmail"></span>
+          <!-- <span class="success-message" id="successEmail"></span> -->
           <span class="err-message" id="errEmail">Incorrect email type</span>
         </div>
 
@@ -65,13 +65,13 @@
             name="comment"
             placeholder="Message"
           ></textarea>
-          <span class="success-message" id="successComment"></span>
+          <!-- <span class="success-message" id="successComment"></span> -->
           <span class="err-message" id="errComment">
             Please enter a message
           </span>
         </div>
       </div>
-      <button class="form-btn" type="submit">Send</button>
+      <button class="form-btn" type="submit" id="formBtn">Send</button>
     </form>
   </div>
 </div>
