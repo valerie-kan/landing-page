@@ -91,10 +91,17 @@ textarea.addEventListener('blur', () => {
 textarea.addEventListener('input', validateComment);
 
 form.addEventListener('submit', e => {
-  isValid();
   e.preventDefault();
-  form.reset();
-  nameInput.classList.remove('valid');
-  emailInput.classList.remove('valid');
-  textarea.classList.remove('valid');
+  isValid();
+
+  if (button.disabled) {
+    nameInput.classList.add('invalid');
+    emailInput.classList.add('invalid');
+    textarea.classList.add('invalid');
+  } else {
+    form.reset();
+    nameInput.classList.remove('valid');
+    emailInput.classList.remove('valid');
+    textarea.classList.remove('valid');
+  }
 });
