@@ -2,7 +2,7 @@
         <div class="question-wrapper">
           <h4 class="question">How do I change my details?</h4>
           <svg class="plus-icon" width="32" height="32">
-            <use href="../img/sprite.svg#icon-plus" />
+            <use href="/img/sprite.svg#icon-plus" />
           </svg>
         </div>
         <p class="answer">
