@@ -39,22 +39,18 @@
   line-height: 169%;
 }
 
-.additional-info {
+.add-info-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: center;
 }
 
-.footer-link,
-.footer-span {
+.add-info-item,
+.footer-link {
   font-family: var(--second-family);
   color: #828282;
   line-height: 169%;
-}
-
-.footer-span {
-  font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -120,7 +116,7 @@
     text-align: start;
   }
 
-  .additional-info {
+  .add-info-list {
     flex-direction: row;
     width: 1200px;
     justify-content: space-between;

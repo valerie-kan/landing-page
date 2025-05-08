@@ -1,0 +1,151 @@
+.contact-us-wrapper {
+  background-color: rgba(98, 72, 255, 0.08);
+  padding: 48px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.contact-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-add-info {
+}
+
+.add-info-text {
+  font-size: 16px;
+  line-height: 169%;
+  margin-bottom: 17px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-span {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 107%;
+  color: var(--color-ttl);
+}
+
+.contact-address,
+.contact-link {
+  font-size: 16px;
+  line-height: 169%;
+  font-family: var(--second-family);
+  color: var(--color-text);
+}
+
+.form-wrapper {
+  border: 2px solid #4f62f6;
+  border-radius: 20px;
+  padding: 48px 16px;
+  background-color: #ffffff;
+}
+
+.inputs-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.input {
+  border-radius: 3px;
+  border: 1px solid var(--color-disabled);
+  padding: 7px 16px;
+  font-family: var(--second-family);
+  line-height: 162%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.input::placeholder {
+  color: #828282;
+}
+
+.input:focus {
+  border-color: var(--color-text);
+  outline: none;
+}
+
+.err-message {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 107%;
+  color: #eb5757;
+}
+
+.form-btn {
+  padding: 20px 64px;
+  display: block;
+  margin: 48px auto 0;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us-wrapper {
+    padding-inline: 130px;
+    flex-direction: row;
+    gap: 132px;
+  }
+
+  .contact-ttl {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .contact-text-wrapper {
+    gap: 32px;
+  }
+
+  .add-info-text {
+    margin-bottom: 24px;
+  }
+
+  .form-wrapper {
+    padding: 80px 42px;
+  }
+
+  .form-btn {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-us-wrapper {
+    padding: 120px;
+  }
+
+  .contact-ttl {
+    text-align: start;
+  }
+  .contact-text-wrapper {
+    width: 670px;
+  }
+
+  .add-info-text {
+    margin-block: 16px 24px;
+  }
+
+  .form-wrapper {
+    width: 585px;
+    padding-inline: 80px;
+  }
+}
