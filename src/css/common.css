@@ -1,18 +1,13 @@
-.container {
-  width: 320px;
-  margin: 0 auto;
-}
+:root {
+  --font-family: 'Nunito Sans', sans-serif;
+  --second-family: 'Montserrat', sans-serif;
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1440px;
-  }
+  --color-ttl: #333333;
+  --color-text: #4f4f4f;
+  --color-default: #6248ff;
+  --color-hover: #7181fc;
+  --color-focus: #354bf4;
+  --color-disabled: #e0e0e0;
 }
 
 body {
@@ -27,7 +22,30 @@ h4 {
   color: var(--color-ttl);
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 56px;
+    line-height: 118%;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    margin-bottom: 60px;
+  }
+}
+
 p {
+  font-size: 18px;
+  line-height: 167%;
   font-family: var(--second-family);
   color: var(--color-text);
 }
@@ -39,6 +57,9 @@ button {
   border-radius: 60px;
   border: none;
   font-weight: 600;
+  font-size: 16px;
+  line-height: 87%;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   transition: background-color 250ms;
 }
@@ -61,14 +82,19 @@ a:hover {
   color: var(--color-hover);
 }
 
-:root {
-  --font-family: 'Nunito Sans', sans-serif;
-  --second-family: 'Montserrat', sans-serif;
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
 
-  --color-ttl: #333333;
-  --color-text: #4f4f4f;
-  --color-default: #6248ff;
-  --color-hover: #7181fc;
-  --color-focus: #354bf4;
-  --color-disabled: #e0e0e0;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
 }

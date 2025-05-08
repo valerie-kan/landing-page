@@ -2,12 +2,6 @@
   padding: 40px 20px;
 }
 
-.reviews-ttl {
-  font-size: 40px;
-  line-height: 110%;
-  margin-bottom: 32px;
-}
-
 .span {
   background-color: rgba(79, 98, 246, 0.1);
   display: block;
@@ -47,8 +41,6 @@
 
 .name {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 167%;
   font-family: var(--font-family);
   color: var(--color-ttl);
   text-align: center;
@@ -107,9 +99,6 @@
   }
 
   .reviews-ttl {
-    font-size: 56px;
-    line-height: 118%;
-    margin-bottom: 48px;
     width: 510px;
   }
 

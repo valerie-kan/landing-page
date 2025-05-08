@@ -3,11 +3,7 @@
 }
 
 .get-started-ttl {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 110%;
   margin-right: 10px;
-  margin-bottom: 32px;
 }
 
 .ttl-span {
@@ -40,11 +36,6 @@
   margin-bottom: 24px;
 }
 
-.start-list-text {
-  font-size: 18px;
-  line-height: 167%;
-}
-
 .line {
   display: none;
 }
@@ -55,10 +46,7 @@
   }
 
   .get-started-ttl {
-    font-size: 56px;
-    line-height: 118%;
     margin-right: 0;
-    margin-bottom: 48px;
     width: 419px;
   }
 
@@ -120,10 +108,7 @@
   }
 
   .get-started-ttl {
-    font-size: 56px;
-    line-height: 118%;
     width: 483px;
-    margin-bottom: 60px;
   }
 
   .started-list {
